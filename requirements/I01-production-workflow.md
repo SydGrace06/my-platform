@@ -311,12 +311,12 @@ Project conventions are documented in:
 ```
 Before committing:
 
-- [ ] The style guide exists at `docs/style-guide.md`.
-- [ ] `docs/.gitkeep` has been removed.
-- [ ] `README.md` accurately describes the current project.
-- [ ] The README link/path to the style guide is correct.
-- [ ] Markdown files have been reviewed for formatting and obvious errors.
-- [ ] Repository state has been inspected before committing.
+- [x] The style guide exists at `docs/style-guide.md`.
+- [x] `docs/.gitkeep` has been removed.
+- [x] `README.md` accurately describes the current project.
+- [x] The README link/path to the style guide is correct.
+- [x] Markdown files have been reviewed for formatting and obvious errors.
+- [x] Repository state has been inspected before committing.
 
 ---
 
