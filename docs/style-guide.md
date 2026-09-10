@@ -268,7 +268,7 @@ Example:
 ```
 
 The requirements record should remain useful as project history. Do not turn it into busywork or maintain duplicate status information that is already better represented elsewhere.
-
+ 
 ---
 
 ## Repository Organization
