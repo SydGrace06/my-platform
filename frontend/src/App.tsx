@@ -4,7 +4,7 @@ function App() {
 return (
   <main>
     <h1>Sydney Goettel</h1>
-    <h2>Senior Capstone Production Platform Profile</h2>
+    <h2>Senior Capstone Production Platform</h2>
     <p>
     This site will present my software projects, engineering decisions,
     and production systems.
