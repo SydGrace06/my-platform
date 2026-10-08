@@ -157,4 +157,4 @@ scalable structure for continued development.
 * Lint: `npm run lint`
 * Production build: `npm run build`
 * Production output: `frontend/dist/`
-* Frontend foundation pull request: `#___`
+* Frontend foundation pull request: `#1`
