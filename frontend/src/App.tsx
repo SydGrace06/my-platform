@@ -58,7 +58,12 @@ type Report = {
 }
 
 function App() {
-  const [reports, setReports] = useState<Report[]>([]) // React created these methods (setReports and setNewReportText) for us
+  const initialReports: Report[] = [
+    { id: '1', text: 'Navigation link is broken', kind: 'bug', priority: 'low' },
+    { id: '2', text: 'Add dark mode', kind: 'feature', priority: 'high' },
+  ]
+
+  const [reports, setReports] = useState<Report[]>(initialReports) // React created these methods (setReports and setNewReportText) for us
   const [newReportText, setNewReportText] = useState('') 
   
   function addReport() {
@@ -67,8 +72,8 @@ function App() {
     const newReport: Report = {
       id: crypto.randomUUID(),
       text: text,
-      kind: 'bug',
-      priority: 'new',
+      kind: 'bug', // default
+      priority: 'new', // default
     }
     setReports([...reports, newReport])
     setNewReportText('')
@@ -80,11 +85,6 @@ function App() {
     kind: 'bug',
     priority: 'new',
   };
-
-  const initialReports: Report[] = [
-    { id: '1', text: 'Navigation link is broken', kind: 'bug', priority: 'new' },
-    { id: '2', text: 'Add dark mode', kind: 'feature', priority: 'new' },
-  ]
 
   return (
     <main className="landing">
@@ -152,7 +152,6 @@ function App() {
           </ul>
         </section>
       </section>
-      
     </main>
   )
 }
