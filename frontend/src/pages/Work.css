@@ -1,0 +1,7 @@
+.work-page {
+  background-color: var(--warm-paper);
+}
+
+.work-page .reports-section {
+  padding-top: 2rem;
+}

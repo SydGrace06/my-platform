@@ -1,0 +1,90 @@
+.about-page {
+  padding-block: clamp(3rem, 8vw, 6rem);
+}
+
+.about-page h1 {
+  max-width: 48rem;
+  margin-bottom: clamp(2rem, 5vw, 3.5rem);
+  color: var(--forest-ink);
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  font-weight: 500;
+  line-height: 1.08;
+}
+
+.about-page h1 em {
+  color: var(--rust);
+  font-weight: 400;
+}
+
+.about-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(14rem, 0.8fr);
+  gap: clamp(2rem, 6vw, 5rem);
+  align-items: start;
+}
+
+.about-copy {
+  max-width: 42rem;
+}
+
+.about-copy p {
+  margin-bottom: 1.25rem;
+  color: var(--forest-ink);
+  font-size: 1.05rem;
+  line-height: 1.9;
+}
+
+.about-note {
+  padding: 1.5rem;
+  border: 1px solid var(--muted-tan);
+  background: rgba(210, 190, 159, 0.25);
+  transform: rotate(1deg);
+}
+
+.note-label,
+.section-kicker {
+  color: var(--rust);
+  font-family: var(--font-label);
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.about-note ul {
+  padding-left: 1.2rem;
+  margin: 1rem 0 0;
+  color: var(--forest-ink);
+  line-height: 2;
+}
+
+.about-bottom {
+  margin-top: clamp(3rem, 7vw, 5rem);
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--muted-tan);
+}
+
+.interest-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.interest-list span {
+  padding: 0.55rem 0.9rem;
+  border: 1px solid var(--olive);
+  border-radius: 2rem;
+  color: var(--forest-ink);
+  font-size: 0.85rem;
+}
+
+@media (max-width: 700px) {
+  .about-intro {
+    grid-template-columns: 1fr;
+  }
+
+  .about-note {
+    max-width: 28rem;
+  }
+}
