@@ -1,0 +1,83 @@
+/* ==============================
+   PORTFOLIO NAVIGATION
+============================== */
+
+.portfolio-nav {
+  background-color: var(--warm-paper);
+  border-bottom: 1px solid var(--muted-tan);
+  padding-block: 1rem;
+}
+
+.portfolio-nav .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* Brand */
+
+.nav-brand {
+  color: var(--forest-ink);
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: -0.04em;
+}
+
+.nav-brand:hover {
+  color: var(--rust);
+}
+
+.brand-period {
+  color: var(--rust);
+}
+
+/* Navigation links */
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: clamp(0.75rem, 2vw, 1.75rem);
+}
+
+.nav-links a {
+  color: var(--walnut);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: var(--rust);
+}
+
+/* Active page */
+
+.nav-links a.active {
+  color: var(--rust);
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: var(--rust);
+  text-underline-offset: 0.4rem;
+}
+
+/* Smaller screens */
+
+@media (max-width: 575.98px) {
+  .portfolio-nav .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    justify-content: flex-start;
+    width: 100%;
+    gap: 1rem;
+  }
+}

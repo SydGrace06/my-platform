@@ -1,0 +1,147 @@
+.resume-page {
+  padding-block: clamp(3rem, 8vw, 6rem);
+}
+
+.resume-page h1 {
+  margin-bottom: 0.75rem;
+  color: var(--forest-ink);
+  font-family: var(--font-display);
+  font-size: clamp(2.8rem, 6vw, 5rem);
+  font-weight: 500;
+}
+
+.resume-page h1 em {
+  color: var(--rust);
+  font-weight: 400;
+}
+
+.resume-heading {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: end;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.resume-intro {
+  max-width: 32rem;
+  color: var(--walnut);
+  line-height: 1.7;
+}
+
+.resume-download {
+  display: inline-block;
+  padding: 0.7rem 1rem;
+  border: 1px solid var(--forest-ink);
+  color: var(--forest-ink);
+  font-family: var(--font-label);
+  font-size: 0.75rem;
+  text-decoration: none;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.resume-download:hover {
+  background-color: var(--forest-ink);
+  color: var(--warm-paper);
+}
+
+.resume-section {
+  padding-block: 2rem;
+  border-top: 1px solid var(--muted-tan);
+}
+
+.resume-section > h2 {
+  margin-bottom: 1.5rem;
+  color: var(--rust);
+  font-family: var(--font-label);
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.resume-entry {
+  max-width: 54rem;
+  margin-bottom: 2rem;
+}
+
+.resume-entry:last-child {
+  margin-bottom: 0;
+}
+
+.resume-entry-heading {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.5rem 1rem;
+}
+
+.resume-entry-heading h3 {
+  margin: 0;
+  color: var(--forest-ink);
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 500;
+}
+
+.resume-entry-heading span {
+  color: var(--walnut);
+  font-family: var(--font-label);
+  font-size: 0.7rem;
+}
+
+.resume-role {
+  margin-top: 0.35rem;
+  color: var(--olive);
+  font-weight: 600;
+}
+
+.resume-entry p,
+.resume-entry li {
+  color: var(--forest-ink);
+  line-height: 1.75;
+}
+
+.resume-entry ul {
+  padding-left: 1.2rem;
+  margin-top: 0.75rem;
+}
+
+.resume-detail {
+  color: var(--walnut) !important;
+  font-size: 0.9rem;
+}
+
+.resume-skills {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem 2rem;
+}
+
+.resume-skills h3 {
+  color: var(--forest-ink);
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.resume-skills p {
+  color: var(--walnut);
+  line-height: 1.7;
+}
+
+.resume-page {
+  text-align: left;
+}
+
+.resume-section,
+.resume-entry,
+.resume-skills {
+  text-align: left;
+}
+
+@media (max-width: 650px) {
+  .resume-skills {
+    grid-template-columns: 1fr;
+  }
+}
